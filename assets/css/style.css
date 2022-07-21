@@ -1,0 +1,691 @@
+@font-face {
+    font-family: "raleway";
+    src: url(../font/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: "raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+/* NAV */
+#logo {
+    letter-spacing: .3rem;
+    margin-left: 1rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+header a:hover {
+    background-color: black;
+    color: white;
+}
+
+#menu i {
+    margin-right: .3rem;
+}
+
+#burger {
+    display: none;
+}
+
+/* DIAPORAMA */
+h1 {
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+    top: 6rem;
+    margin-left: 3rem;
+}
+
+#slider p {
+    position: absolute;
+    color: white;
+    top: 14rem;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+}
+
+#slider button {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.809);
+    padding: 0.8rem;
+    border: none;
+    top: 18rem;
+    cursor: pointer;
+    margin-left: 3rem;
+}
+
+.social {
+    position: absolute;
+    color: grey;
+    bottom: 0;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+}
+
+#slider {
+    position: relative;
+}
+
+#prev,
+#next {
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    top: 50%;
+}
+
+#prev:hover,
+#next:hover {
+    cursor: pointer;
+}
+
+#prev {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
+
+#slider img {
+    width: 100%;
+    height: 70vh;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* SECTION ABOUT THE COMPAGNY */
+
+h2 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    color: #3f3f3f;
+}
+
+.sousTitre {
+    color: #3f3f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sousCatego {
+    width: 20%;
+    text-align: center;
+}
+
+.icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.sousCatego p {
+    margin-bottom: 1.5rem;
+}
+
+/* SECTION WE KNOW DESIGN. */
+
+.knowDesign {
+    margin-top: 6rem;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    width: 100%;
+}
+
+h3 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.design {
+    width: 50%;
+    padding-left: 2rem;
+}
+
+.design p {
+    font-size: 1.2rem;
+}
+
+.imgPhoneBuildings {
+    width: 40%;
+    padding-right: 2rem;
+}
+
+.imgPhoneBuildings img {
+    width: 100%;
+    border-radius: 3%;
+}
+
+.view {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+/* SECTION THE TEAM */
+#team {
+    width: 97%;
+    margin: auto;
+}
+
+.theTeam {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 20%;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.34);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    margin: 1rem 1rem;
+}
+
+.card h4 {
+    margin: 1rem 1rem;
+    font-size: 1 rem;
+    color: rgb(116, 116, 116);
+}
+
+.card p {
+    margin: 1rem 1rem;
+}
+
+.card>button {
+    border: none;
+    width: 90%;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+/* SECTION RELATIONS */
+#relations {
+    display: flex;
+    justify-content: space-around;
+    background-color: #616161;
+    padding: 4rem;
+    margin-top: 6rem;
+}
+
+.number,
+.namerelation {
+    color: white;
+    text-align: center;
+}
+
+.number {
+    font-size: 2.5rem;
+}
+
+/* SECTION OUR WORK */
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 97%;
+    margin: auto;
+}
+
+.photos img {
+    width: 20%;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+
+/* SECTION OUR SKILLS */
+#ourSkills {
+    margin-top: 6rem;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    width: 100%;
+}
+
+h3 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.explainSkills {
+    width: 40%;
+    margin-left: 1rem;
+}
+
+.skillsPourcentage {
+    width: 45%;
+    margin-right: 1rem;
+}
+
+.skills {
+    letter-spacing: 0.5rem;
+}
+
+.container {
+    background-color: #9e9e9e;
+    margin: 1rem 0;
+}
+
+.skill {
+    background-color: #616161;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    transition: all 2s;
+}
+
+/* SECTION PRINCING */
+#pricing {
+    background-color: #616161;
+    padding-bottom: 6rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.sousTitrePrice {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+}
+
+.choosePrice {
+    width: 97%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardPrice {
+    width: 30%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.titlePro {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    padding: 4rem;
+    font-size: 1.5rem;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.btnPrice {
+    display: flex;
+    justify-content: center;
+    background-color: #f1f1f1;
+    color: black;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.signUp {
+    border: none;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* SECTION CONTACT */
+#contact form {
+    width: 97%;
+    margin: auto;
+}
+
+#contact input {
+    width: 100%;
+    padding: .8rem;
+    margin: .5rem 0;
+    box-sizing: border-box;
+}
+
+.sendMessage {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.detailsContact i {
+    font-size: 2rem;
+    margin: 1rem 2rem;
+}
+
+.bg {
+    background-color: #f1f1f1;
+    padding-top: 1rem;
+}
+
+.message {
+    margin-bottom: 2rem;
+}
+
+.mail {
+    margin-bottom: 2rem;
+}
+
+.map img {
+    width: 100%;
+    height: 70vh;
+}
+
+.map {
+    margin-top: 3rem;
+    padding-bottom: 6rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    color: white;
+}
+
+footer #btnToTheTop {
+    background-color: white;
+    border: none;
+    color: #3f3f3f;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+#btnToTheTop :hover {
+    background-color: #f1f1f1
+}
+
+#social i {
+    font-size: 1.5rem;
+}
+
+footer p {
+    margin-top: 2rem;
+}
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width:576px) {
+
+    /* NAV */
+    header nav a,
+    header form {
+        display: none;
+        color: white;
+        text-decoration: none;
+    }
+
+    #logo {
+        letter-spacing: .3rem;
+    }
+
+    #burger {
+        display: flex;
+        margin: .5rem 1rem .5rem 0;
+    }
+
+    /* DIAPORAMA */
+    #slider img {
+        width: 110%;
+        height: 50vh;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    #slider p {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    #slider button {
+        margin-left: 0;
+    }
+
+    .social {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    #prev,
+    #next {
+        display: none;
+    }
+
+    /* SECTION ABOUT THE COMPAGNY */
+    .categories {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sousCatego {
+        width: 90%;
+        margin: auto;
+    }
+
+    .icon {
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+
+    /* SECTION WE KNOW DESIGN. */
+    .knowDesign {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .design {
+        width: 90%;
+    }
+
+    .design p {
+        font-size: .8rem;
+    }
+
+    .view {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .imgPhoneBuildings {
+        width: 90%;
+        padding-right: 0;
+        margin: auto;
+    }
+
+    /* SECTION THE TEAM */
+    .theTeam {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    /* SECTION RELATIONS */
+    #relations {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .number {
+        margin-top: 1rem;
+    }
+
+    /* SECTION OUR WORK */
+    .photos {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .photos img {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* SECTION OUR SKILLS */
+    #ourSkills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .explainSkills {
+        width: 90%;
+        margin: auto;
+    }
+
+    .explainSkills p {
+        font-size: .8rem;
+    }
+
+    .skillsPourcentage {
+        width: 90%;
+        margin: auto;
+    }
+
+    .skills {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .skill {
+        padding: 0.3rem;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    /* SECTION PRINCING */
+    .sousTitrePrice {
+        padding-bottom: 4rem;
+    }
+
+    .choosePrice {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardPrice {
+        width: 90%;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+    .title {
+        margin: 0;
+    }
+
+    /* SECTION CONTACT */
+    .map img {
+        width: 100%;
+        height: 25vh;
+    }
+
+    .map {
+        width: 95%;
+        margin: auto;
+        margin-top: 3rem;
+    }
+}
