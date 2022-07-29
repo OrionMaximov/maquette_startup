@@ -1,3 +1,7 @@
+import  {zoom}  from "./lib/zoom";
+import {show} from "./lib/scroll.js";
+import {scrollToTop} from "./lib/scrollTop";
+
 /* ANIMATION SLIDER */
 const sliderImg = document.querySelector("#slider>img");
 const prev = document.getElementById("prev");
@@ -57,18 +61,7 @@ setInterval(
     3000
 )
 
-/* ANIMATION TO THE TOP */
-let scrollToTopBtn = document.getElementById("btnToTheTop");
-let rootElement = document.documentElement;
-function scrollToTop() {
-  // Scroll to top logic
-  rootElement.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
-scrollToTopBtn.addEventListener("click", scrollToTop);
-
-
-
+scrollToTop();
+show();
+zoom();
 
